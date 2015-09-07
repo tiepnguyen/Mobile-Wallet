@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Arela Wallet</title>
+	<link rel="stylesheet" type="text/css" href="style.mobile.css">
+</head>
+
+<body class="home">
+	<header class="header transition">
+		<h2 class="page_name">Account Setting</h2>
+		<a href="logout" class="headnav logout_btn" id="logout_btn" onclick="return confirm('Are you sure you want to logout?')"><span></span></a>
+	</header>
+	<section class="body transition">
+		<!--
+		<div class="status success">
+			Update your settings
+		</div>
+		 -->
+		<script type="text/javascript" src="scripts/ajaxupload.js"></script>
+		<div class="setting_profile_photo">
+			<label class="photo_change_btn" id="photo_change_btn">
+				<img src="images/sample_profile_pic_100.jpg">
+			</label>
+		</div>
+		<form class="setting_form">
+			<ul class="nested_list">
+				<li>
+					<span>Email</span>
+					<input type="text" value="tiep@tiep.info">
+				</li>
+				<li>
+					<span>Password</span>
+					<a id="change_password_btn">Change password</a>
+				</li>
+			</ul>
+			<ul class="nested_list">
+				<li>
+					<span>Name</span>
+					<input type="text" value="Tiep Nguyen">
+				</li>
+				<li>
+					<span>Gender</span>
+					<select name="" id="">
+						<option value="">Male</option>
+						<option value="">Female</option>
+						<option value="">Unknown</option>
+					</select>
+				</li>
+				<li>
+					<span>Location</span>
+					<input type="text" value="Ho Chi Minh City">
+				</li>
+			</ul>
+			<ul class="nested_list">
+				<li>
+					<span>Deal Notification</span>
+					<input type="checkbox" checked>
+				</li>
+				<li>
+					<span>News &amp; Updates</span>
+					<input type="checkbox">
+				</li>
+			</ul>
+			<label class="button_wrapper">
+				<button class="button wide">Update My Settings</button>
+			</label>
+		</form>
+	</section>
+	<nav class="tabbar">
+		<ul>
+			<li class="explorer">
+				<a href="explorer.html"><span></span>explorer</a>
+			</li>
+			<li class="cards">
+				<a href="cards.html"><span></span>cards</a>
+			</li>
+			<li class="vouchers">
+				<a href="vouchers.html"><span></span>vouchers</a>
+			</li>
+			<li class="stamps">
+				<a href="stamps.html"><span></span>stamps</a>
+			</li>
+			<li class="profile active">
+				<a href="profile.html"><span></span>profile</a>
+			</li>
+		</ul>
+	</nav>
+	<section class="modal grayfill" id="change_password_modal">
+		<header class="header transition">
+			<a class="headnav back_btn"><span></span></a>
+			<h2 class="page_name">Change Password</h2>
+		</header>
+		<!--
+		<div class="status success">
+			Update your settings
+		</div>
+		 -->
+		<div class="form_container">
+			<form action="" class="nested_form">
+				<div class="signin_input">
+					<input type="text" placeholder="Old Password">
+					<input type="password" placeholder="New Password">
+					<input type="password" placeholder="Confirm New Password">
+				</div>
+				<button class="button wide">Update My Password</button>
+			</form>
+		</div>
+	</section>
+	<script type="text/javascript" src="scripts/zepto.min.js"></script>
+	<script type="text/javascript" src="scripts/fastclick.js"></script>
+	<script type="text/javascript" src="scripts/arela.wallet.js"></script>
+</body>
+
+</html>
